@@ -19,6 +19,7 @@ export const createOauthClient = (provider: "google" | "facebook") => {
 		auth: {
 			tokenHost: providerOauth2Settings[provider].tokenHost,
 			tokenPath: providerOauth2Settings[provider].tokenPath,
+			authorizeHost: providerOauth2Settings[provider].authorizeHost,
 			authorizePath: providerOauth2Settings[provider].authorizePath,
 		},
 	});

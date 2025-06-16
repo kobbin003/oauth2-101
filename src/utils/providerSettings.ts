@@ -14,6 +14,7 @@ export const providerOauth2Settings: Partial<
 		tokenPath: "/v15.0/oauth/access_token", // or latest version (e.g. /v19.0/)
 		authorizeHost: "https://www.facebook.com",
 		authorizePath: "/v15.0/dialog/oauth",
+
 		redirectUri: `${process.env.BASE_URL}/api/auth/callback/google`,
 		scope: "email public_profile",
 	},
